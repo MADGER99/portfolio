@@ -60,7 +60,7 @@ const Hero = () => {
                 <button className="border hover:border-none hover:bg-cyan-500 shadow-lg hover:shadow-cyan-500/50 px-4 py-2 inline-flex item-center justify-center whitespace-nowrap rounded-lg text-base font-semibold ">
                     <a href={cvpdf} download="CV" >Download Cv &nbsp;</a><FiDownload className="text-xl"/>
                 </button>
-             </div>
+             
              <div className='m-8 flex items-center justify-center gap-4 text-2xl'> 
         <motion.div 
             variants={iconVariants(2)}
@@ -80,6 +80,7 @@ const Hero = () => {
             animate="animate" >
                <a href=""><FaSquareXTwitter/></a>
         </motion.div>
+    </div>
     </div>
         </div>
         {/* รูป */}
