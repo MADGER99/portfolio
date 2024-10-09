@@ -24,8 +24,6 @@ const BtnSocials = () => {
             animate="animate" >
                 <a href="https://github.com/MADGER99"><FaGithub/></a>
         </motion.div>
-        
-        
         <motion.div 
             variants={iconVariants(3)}
             initial="initial"

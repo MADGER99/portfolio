@@ -3,6 +3,21 @@ import { motion } from "framer-motion"
 import Photo from "./Photo"
 import { FiDownload} from 'react-icons/fi'
 import cvpdf from "../assets/CV_Professional.pdf"
+import { FaGithub,FaInstagram } from 'react-icons/fa'
+import { FaSquareXTwitter } from 'react-icons/fa6'
+
+const iconVariants = (duration) => ({
+  initial: { y: -5},
+  animate: {
+      y: [5, -5],
+      transition: {
+          duration: duration,
+          ease: "linear",
+          repeat: Infinity,
+          repeatType: "reverse",
+      }
+  }
+})
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0},
@@ -46,7 +61,26 @@ const Hero = () => {
                     <a href={cvpdf} download="CV" >Download Cv &nbsp;</a><FiDownload className="text-xl"/>
                 </button>
              </div>
-
+             <div className='m-8 flex items-center justify-center gap-4 text-2xl'> 
+        <motion.div 
+            variants={iconVariants(2)}
+            initial="initial"
+            animate="animate" >
+                <a href="https://github.com/MADGER99"><FaGithub/></a>
+        </motion.div>
+        <motion.div 
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate" >
+               <a href=""><FaInstagram/></a>
+        </motion.div>
+        <motion.div 
+            variants={iconVariants(4)}
+            initial="initial"
+            animate="animate" >
+               <a href=""><FaSquareXTwitter/></a>
+        </motion.div>
+    </div>
         </div>
         {/* รูป */}
         <div className="w-full lg:w-1/2 lg:p-8 order-1 xl:order-none ">
