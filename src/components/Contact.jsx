@@ -1,6 +1,5 @@
 import { motion } from "framer-motion"
 import { CONTACT } from "../constants"
-import BtnSocials from "./btnSocials"
 
 
 const Contact = () => {
@@ -13,7 +12,6 @@ const Contact = () => {
             className="my-10 text-center text-4xl"
         >Get in Toch
         </motion.h2>
-        <BtnSocials/>
         <div className="text-center tracking-tighter">
             <p className="my-4">{CONTACT.address}</p>
             <p className="my-4">{CONTACT.phoneNo}</p>
