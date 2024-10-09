@@ -1,5 +1,4 @@
 import Logo from './Logo'
-import BtnSocials from './btnSocials'
 import { motion } from "framer-motion"
 
 const iconVariants = (duration) => ({
