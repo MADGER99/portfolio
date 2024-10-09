@@ -26,8 +26,8 @@ const Educations = () => {
                     initial={{ opacity: 0, x: 100 }}
                     transition={{ duration: 1.5 }}
                     className="w-full max-w-xl lg:w-3/4">
-                    <h6 className="mb-2 font-semibold">{educations.title}</h6>
-                    <ul><p>{educations.university}</p>
+                    <h6 className="mb-2 font-semibold  text-neutral-100">{educations.title}</h6>
+                    <ul><p className="mb-4 text-neutral-400">{educations.university}</p>
                        <li>สาขา {educations.major}</li>
                     </ul>
                     
