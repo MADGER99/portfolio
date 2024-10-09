@@ -24,7 +24,6 @@ const Navbar = () => {
         className='flex flex-shrink-0 items-center'>
         <Logo />
       </motion.div>
-      <BtnSocials/>
     </nav>
   )
 }

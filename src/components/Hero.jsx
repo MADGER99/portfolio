@@ -2,7 +2,6 @@ import {HERO_CONTENT} from "../constants"
 import { motion } from "framer-motion"
 import Photo from "./Photo"
 import { FiDownload} from 'react-icons/fi'
-import BtnSocials from "./btnSocials"
 import cvpdf from "../assets/CV_Professional.pdf"
 
 const container = (delay) => ({
@@ -46,7 +45,6 @@ const Hero = () => {
                 <button className="border hover:border-none hover:bg-cyan-500 shadow-lg hover:shadow-cyan-500/50 px-4 py-2 inline-flex item-center justify-center whitespace-nowrap rounded-lg text-base font-semibold ">
                     <a href={cvpdf} download="CV" >Download Cv &nbsp;</a><FiDownload className="text-xl"/>
                 </button>
-                <BtnSocials/> 
              </div>
 
         </div>
