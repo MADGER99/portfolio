@@ -47,7 +47,7 @@ const Contact = () => {
                <a href=""><FaSquareXTwitter/></a>
         </motion.div>
     </div>
-        <div className="text-center tracking-tighter ">
+        <div className="text-center tracking-tighter">
             <p className="my-4">{CONTACT.address}</p>
             <p className="my-4 flex items-center justify-center gap-4 ">
                 <FaPhoneSquareAlt/>
