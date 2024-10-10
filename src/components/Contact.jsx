@@ -1,7 +1,8 @@
 import { motion } from "framer-motion"
 import { CONTACT } from "../constants"
-import { FaGithub,FaInstagram } from 'react-icons/fa'
+import { FaGithub,FaInstagram,FaPhoneSquareAlt } from 'react-icons/fa'
 import { FaSquareXTwitter } from 'react-icons/fa6'
+import { MdEmail } from "react-icons/md";
 
 const iconVariants = (duration) => ({
     initial: { y: -5},
@@ -24,7 +25,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: -100 }}
             transition={{ duration: 1.5 }}
             className="my-10 text-center text-4xl"
-        >Get in Toch
+        >ช่องทางการติดต่อ
         </motion.h2>
         <div className='m-8 flex items-center justify-center gap-4 text-2xl'> 
         <motion.div 
@@ -46,10 +47,16 @@ const Contact = () => {
                <a href=""><FaSquareXTwitter/></a>
         </motion.div>
     </div>
-        <div className="text-center tracking-tighter">
+        <div className="text-center tracking-tighter ">
             <p className="my-4">{CONTACT.address}</p>
-            <p className="my-4">{CONTACT.phoneNo}</p>
-            <a href="#" >{CONTACT.email}</a>
+            <p className="my-4 flex items-center justify-center gap-4 ">
+                <FaPhoneSquareAlt/>
+                {CONTACT.phoneNo}
+            </p>
+            <a href="#" className="my-4 flex items-center justify-center gap-4 ">
+                <MdEmail/>
+                {CONTACT.email}
+            </a>
         </div>
     </div>
   )
